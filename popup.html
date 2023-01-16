@@ -20,11 +20,11 @@
   var prevy = 0;
   setInterval(function(){
     window.moveTo(window.screenX + (dirx * speed), window.screenY + (diry * speed));
-    if (window.screenX == prevx){dirx = dirx * -1; speed = Math.random() * 5}
-    if (window.screenY == prevy){diry = diry * -1; speed = Math.random() * 5}
+    if (window.screenX == prevx){dirx = dirx * -1; speed = 5 + Math.random() * 5;}
+    if (window.screenY == prevy){diry = diry * -1; speed = 5 + Math.random() * 5;}
     prevx = window.screenX;
     prevy = window.screenY;
-  },1)
+  },10)
  </script>
   </head>
   <body>
